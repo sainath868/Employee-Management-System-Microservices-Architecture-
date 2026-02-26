@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Employee Management System</h1>
+        <button id="logoutBtn" class="danger">Logout</button>
+    </header>
+
+    <section class="card">
+        <h2>Add Employee</h2>
+        <form id="employeeForm">
+            <input id="name" type="text" placeholder="Name" required />
+            <input id="department" type="text" placeholder="Department" required />
+            <input id="salary" type="number" placeholder="Salary" required />
+            <input id="email" type="email" placeholder="Email" required />
+            <button type="submit">Save Employee</button>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Employees</h2>
+        <button id="refreshBtn">Refresh List</button>
+        <div id="employees" class="employee-grid"></div>
+    </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
